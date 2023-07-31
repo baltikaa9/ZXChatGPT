@@ -3,7 +3,7 @@
 ## Telegram bot to communicate with ChatGPT
 
 
-### link to the bot - @zxchatgptbot
+### link to the bot - [@zxchatgptbot](https://t.me/zxchatgptbot)
 
 
 ## Using the bot
