@@ -1,6 +1,6 @@
 # ZXChatGpt
 
-## Telegram bot to communication with ChatGPT
+## Telegram bot to communicate with ChatGPT
 
 ---
 ### link to the bot - @zxchatgptbot
