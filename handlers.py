@@ -1,23 +1,20 @@
 import asyncio
-from typing import Callable
 
 from aiogram import Dispatcher
 from aiogram.types import Message
 from openai.error import RateLimitError
 
 from create_bot import bot
+from decorators import is_private_chat
 from services import get_chat_gpt_response, set_context, get_context
 
 
 async def start(message: Message):
-    await message.answer('helo')
-
-
-def is_private_chat(func: Callable):
-    async def wrapper(message: Message):
-        if message.chat.type == 'private':
-            await func(message)
-    return wrapper
+    await message.answer('Привет! Я - ChatGPT, искусственный интеллект, разработанный компанией OpenAI. Моя основная '
+                         'задача - помогать отвечать на вопросы и предоставлять информацию по различным темам. Я '
+                         'основан на технологии глубокого обучения и обучен на большом объеме текстовых данных, '
+                         'что позволяет мне предоставлять ответы и выполнять различные задачи. Пожалуйста, '
+                         'задайте свой вопрос, и я постараюсь вам помочь!')
 
 
 async def chat_gpt_answer(message: Message):
@@ -26,6 +23,7 @@ async def chat_gpt_answer(message: Message):
             message.text = message.text.split(maxsplit=1)[1]
         except IndexError:
             ...
+
     bot_message = await message.answer('Печатает...')
 
     try:
