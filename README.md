@@ -2,10 +2,10 @@
 
 ## Telegram bot to communicate with ChatGPT
 
----
+
 ### link to the bot - @zxchatgptbot
 
----
+
 ## Using the bot
 To start communicating with the bot, just write him any message. This message will send to the ChatGPT.
 The bot also has the following commands:
@@ -14,7 +14,7 @@ The bot also has the following commands:
 - `/deletecontext` delete the dialog context with the bot in the current chat
 
 
----
+
 ## Bot setup before launch
 Before launching the bot you need to create a file `.env` in which you should write the following:
 - BOT_TOKEN - the telegram bot token received in [BotFather](https://t.me/BotFather)
