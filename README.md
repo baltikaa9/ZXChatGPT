@@ -29,3 +29,5 @@ OPENAI_API_KEY=your_api_key
 Also, you should install the requirements using the command: `pip install -r requirements.txt`.
 
 Now you can launch the bot using the command `python main.py`.
+
+The contexts of the dialogs of each chat are stored in the `context.json` file.
