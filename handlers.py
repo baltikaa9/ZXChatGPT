@@ -49,7 +49,7 @@ async def get_chat_context(message: Message):
     context = get_context(message.chat.id)
     context = [item.get('content') for item in context]
     if context:
-        await message.answer('\n'.join(context))
+        await message.answer('● ' + '\n● '.join(context))
     else:
         await message.answer('История пуста')
 
