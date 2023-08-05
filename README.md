@@ -30,4 +30,4 @@ Also, you should install the requirements using the command: `pip install -r req
 
 Now you can launch the bot using the command `python main.py`.
 
-The contexts of the dialogs of each chat are stored in the `data/context.json` file.
+[P.S.] The contexts of the dialogs of each chat are stored in the `data/context.json` file.
