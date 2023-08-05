@@ -15,7 +15,7 @@ The bot also has the following commands:
 
 
 
-## Bot setup before launch
+## Setup bot
 Before launching the bot you need to create a file `.env` in which you should write the following:
 - BOT_TOKEN - the telegram bot token received in [BotFather](https://t.me/BotFather)
 - OPENAI_API_KEY - openai api key received in [OpenAI API](https://platform.openai.com/account/api-keys)
