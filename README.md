@@ -6,7 +6,7 @@
 ### link to the bot - [@zxchatgptbot](https://t.me/zxchatgptbot)
 
 
-## Using the bot
+## Using bot
 To start communicating with the bot, just write him any message. This message will send to the ChatGPT.
 The bot also has the following commands:
 - `/q <message>` to communicate with the bot in groups or supergroups (not private chats)
@@ -30,4 +30,9 @@ Also, you should install the requirements using the command: `pip install -r req
 
 Now you can launch the bot using the command `python main.py`.
 
-[P.S.] The contexts of the dialogs of each chat are stored in the `data/context.json` file.
+[P.S.] The dialog contexts of each chat are stored in the `data/context.json` file that will be created automatically.
+
+## Docker
+- Create a bot image: `docker build -t zxchatgpt .`
+- Create a volume to store the context: `docker volume create zxchatgpt-data`
+- Create and run a container: `docker run --name zxchatgpt -v zxchatgpt-data:/data -d zxchatgpt`
