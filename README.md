@@ -33,6 +33,7 @@ Now you can launch the bot using the command `python main.py`.
 [P.S.] The dialog contexts of each chat are stored in the `data/context.json` file that will be created automatically.
 
 ## Docker
+- Create a directory `data` if it is not created: `mkdir data`
 - Create a bot image: `docker build -t zxchatgpt .`
 - Create a volume to store the context: `docker volume create zxchatgpt-data`
 - Create and run a container: `docker run --name zxchatgpt -v zxchatgpt-data:/data -d zxchatgpt`
